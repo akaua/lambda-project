@@ -5,10 +5,10 @@
 [Install link](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
 
 
-## For test you lambda app on you local environment, open the path ./src and use the command
+## For test you lambda app on you local environment use the command
 
 ```console
-foo@bar:~/cf-codepipeline-lambda/src$ sam local start-api
+foo@bar:~/cf-codepipeline-lambda$ sam local start-api
 ```
 
 ## For test you lambda app on AWS Console use:
