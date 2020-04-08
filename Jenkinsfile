@@ -22,7 +22,7 @@ pipeline {
 
         stage('Package lambda') {
            steps {
-               sh 'aws cloudformation package --template-file /src/lambda.yml --s3-bucket $BUCKET --output-template-file outputtemplate.yml'
+               sh 'aws cloudformation package --template-file ./lambda.yml --s3-bucket $BUCKET --output-template-file outputtemplate.yml'
             }
         }
 
