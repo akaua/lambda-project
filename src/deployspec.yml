@@ -1,0 +1,8 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+        nodejs: 10
+  build:
+    commands:
+      - aws cloudformation deploy --template-file ./outputtemplate.yml --stack-name testLambda --capabilities CAPABILITY_IAM CAPABILITY_NAMED_IAM
